@@ -363,7 +363,7 @@ export const ContextProvider = ({ children }) => {
                 toast.warn(res.data.message, { ...toastConfig, toastId: "cantDeleteUserBooking" });
             } else {
                 toast.info(res.data.message, { ...toastConfig, toastId: "deleteUserBookingSuccess" });
-                handle_get_all_user_bookings(cookieUser.id, restricted);
+                handle_get_all_user_bookings(cookieUser.id, restricted, "", "", "");
                 handle_get_user_bookings(cookieUser.id);
             }
         } catch (err) {

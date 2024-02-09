@@ -16,10 +16,10 @@ const customized_booking_function = async (Bookings, admin, requesterId, Users) 
     let classNames = "text-[12px] md:text-[15px] xl:text-[17px] border-none px-2 py-1 font-sans cursor-default transition-all";
     const all_class_names = {
         my_bookings: `bg-blue-500 hover:bg-blue-400  ${classNames}`,
-        restricted_bookings: `bg-stone-500 hover:bg-stone-400 ${classNames}`,
+        restricted_bookings: `bg-red-500 hover:bg-red-400 ${classNames}`,
         others_bookings_available: `bg-green-500 hover:bg-green-400 ${classNames}`,
         others_bookings_unavailable: `bg-red-500 hover:bg-red-400 ${classNames}`,
-        others_1_hour_slot: `bg-red-500 hover:bg-amber-300 ${classNames}`
+        others_1_hour_slot: `bg-red-500 hover:bg-red-300 ${classNames}`
     }
 
 
